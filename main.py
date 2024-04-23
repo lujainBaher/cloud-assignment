@@ -1,4 +1,4 @@
-file_path = "C:/Users/Elsafwa/Downloads/archive/random_paragraphs.txt"  
+file_path = "./random_paragraphs.txt"  
 
 with open(file_path, 'r') as file:
     content = file.readlines()
