@@ -1,8 +1,9 @@
-FROM python:3.9
+FROM python:latest
 
+WORKDIR /DockerFiles
 
-WORKDIR /app
+COPY random_paragraphs.txt main.py ./
 
-COPY main.py .
+RUN pip install nltk
 
 ENTRYPOINT ["python", "main.py"] 
